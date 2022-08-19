@@ -49,13 +49,13 @@ function marcarTarefa(id){
     console.log(classe);
 
     if (classe == "item") {
-        item.classList.add('clicado');
+        item.classList.add('done');
 
         var icone = document.getElementById('icone_' + id)
         icone.classList.remove('mdi-circle-outline');
         icone.classList.add('mdi-check-circle');
     } else{
-        item.classList.remove('clicado');
+        item.classList.remove('done');
 
         var icone = document.getElementById('icone_' + id)
         icone.classList.remove('mdi-check-circle');
